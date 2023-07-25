@@ -1,0 +1,46 @@
+## keyboard shortcut for i3wm ##
+# Author: HalfWayDown
+# https://github.com/HalfWayDown
+
+# terminal
+bindsym $mod+Return exec --no-startup-id alacritty 
+bindsym Ctrl+Mod1+T exec --no-startup-id kitty
+
+# rofi
+bindsym $mod+d exec --no-startup-id $HOME/.config/polybar/docky/scripts/launcher.sh
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run -b
+bindsym $mod+Shift+c exec --no-startup-id networkmanager_dmenu
+bindsym Control+Mod1+x exec --no-startup-id $HOME/.config/polybar/docky/scripts/powermenu.sh
+
+# screenshot to ~/Screenshots folder
+bindsym Print exec --no-startup-id scrot ~/Screenshots/%b%d::%H:%M:%S.png
+bindsym Control+Shift+Print exec --no-startup-id scrot -s ~/Screenshots/%b%d::%H:%M:%S.png
+
+# launch browser
+bindsym XF86HomePage exec --no-startup-id firefox
+
+# File Explorer
+bindsym $mod+e exec --no-startup-id thunar
+bindsym $mod+Shift+e exec --no-startup-id urxvt -e ranger; workspace $ws3
+
+# Lock Screen
+bindsym Ctrl+Mod1+l exec --no-startup-id ~/.config/bin/lock 
+
+# Calculator app
+bindsym XF86Calculator exec --no-startup-id alacritty -e calc
+
+# Mail Client App
+bindsym XF86Mail exec --no-startup-id thunderbird
+
+# Pulse Audio volume keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Screen brightness keys
+# (This should work for both acpilight or xbacklight.)
+bindsym Mod1+XF86AudioRaiseVolume exec --no-startup-id light -A 5
+bindsym Mod1+XF86AudioLowerVolume exec --no-startup-id light -U 5
+
+# Launch Steam
+bindsym $mod+Shift+S exec --no-startup-id steam
