@@ -1,7 +1,6 @@
 alias la='ls -la --group-directories-first --sort=extension' 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias i3conf='vim ~/.config/i3/'
 alias polyconf='vim ~/.config/polybar/'
 alias dotconf='vim ~/.config'
 alias screenkey='screenkey --key-mode keysyms'
-alias vim='nvim'

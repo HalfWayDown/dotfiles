@@ -86,7 +86,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'sainnhe/gruvbox-material'
     Plug 'sheerun/vim-polyglot'
-    Plug 'ThePrimeagen/vim-be-good'
+
 call plug#end()
 
 " }}}
