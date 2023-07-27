@@ -1,0 +1,10 @@
+Dependencies:
+    - alacritty
+    - btop
+    - dunst
+    - kitty
+    - neofetch
+    - networkmanager-dmenu
+    - picom
+    - polybar
+    - ranger
