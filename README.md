@@ -1,4 +1,4 @@
-Dependencies:
+# Dependencies:
     - alacritty
     - btop
     - dunst
