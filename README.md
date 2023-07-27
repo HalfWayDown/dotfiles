@@ -9,3 +9,7 @@
     - polybar
     - ranger
     - light
+
+
+## to do list:
+    - step for installing
