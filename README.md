@@ -8,3 +8,4 @@
     - picom
     - polybar
     - ranger
+    - light
