@@ -1,7 +1,0 @@
-# workspace assignment for i3 (keep the monitor clean)
-assign [class="Alacritty"] $ws1
-assign [class="firefox"] $ws2
-assign [class="Thunar"] $ws3
-assign [class="thunderbird"] $ws4
-#assign [class="Gthumb"] $ws5
-assign [class="steam"] $ws6

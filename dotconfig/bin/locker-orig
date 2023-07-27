@@ -1,5 +1,0 @@
-#!/bin/bash
-
-exec xautolock -detectsleep -time 10 -locker "~/.config/bin/lock" -notify 30 -notifier "notify-send -u critical -t 5 -- 'LOCKING SCREEN IN 30 SECONDS'" &
-
-exec xidlehook --not-when-fullscreen --not-when-audio --timer 1200 "systemctl suspend" -
