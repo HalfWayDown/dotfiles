@@ -1,0 +1,14 @@
+- clone from repo
+- install oh-my-zsh
+- install powerlevel10k
+- copy .zshrc to home
+- copy .xinitrc to home
+- copy .aliases to home
+- copy .vimrc to home
+- copy .vim folder to home
+- open vim, :PlugInstall, :source ~/.vimrc
+- copy .config to home
+- reboot
+- install kitty
+- copy .local/share/fonts from repo to home
+- 
