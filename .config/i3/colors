@@ -1,0 +1,31 @@
+#######
+#THEME#
+#######
+# set primary gruvbox colorscheme colors
+set $bg #32302f
+set $bg_dim #252423
+set $red #ea6962
+set $green #a9b665
+set $yellow #d8a657
+set $orange #e78a4e
+set $blue #7daea3
+set $purple #d3869b
+set $aqua #89b482
+set $gray #928734
+set $darkgray #7c6f64
+
+# green gruvbox
+# class                 border|backgr|text|indicator|child_border
+#client.focused          $green $green $darkgray $purple $darkgray
+#client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+#client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+#client.urgent           $red $red $white $red $red
+
+# blue gruvbox
+# class                 border      backgr      text        indicator       child_border
+client.focused          $blue       $blue       $darkgray   $orange         $orange
+client.focused_inactive $darkgray   $darkgray   $yellow     $purple         $bg_dim
+client.unfocused        $darkgray   $darkgray   $yellow     $purple         $darkgray
+client.urgent           $red        $red        $white      $red            $red
+
+#end of window title bars & borders section
