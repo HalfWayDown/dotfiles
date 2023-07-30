@@ -5,6 +5,7 @@
 # terminal
 bindsym $mod+Return exec --no-startup-id alacritty 
 bindsym Ctrl+Mod1+T exec --no-startup-id kitty
+bindsym $mod+Shift+T exec --no-startup-id urxvt
 
 # rofi
 bindsym $mod+d exec --no-startup-id $HOME/.config/polybar/docky/scripts/launcher.sh

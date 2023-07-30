@@ -1,3 +1,46 @@
+antialias: 1
+Xft.hinting: 1
+Xft.rgba: rgb
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+! scrollbar setting
+URxvt.scrollBar: false
+URxvt.internalBorder: 15
+
+! Font Settings
+URxvt.font: xft:Hack:regular:size=11
+URxvt.boldFont: xft:Hack:bold:size=11
+URxvt.italicFont: xft:Hack:italic:size=11
+URxvt.boldItalicfont: xft:Hack:bold italic:size=11
+
+! True Transparency 
+URxvt.depth: 32
+URxvt.background: rgba:3f00/3f00/3f00/dddd 
+
+URxvt.perl-ext-common: default,matcher,resize-font,clipboard,resize-font,url-select,keyboard-select
+
+! Resize fonts
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font;bigger
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.keysym.C-question: resize-font:show
+
+! copy paste function
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+URxvt.keysym.Control-V: eval:paste_clipboard
+URxvt.keysym.Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+URxvt.keysym.C-M-c: builtin-string:
+
+!URxvt.perl-ext-common: default
+
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
 ! Description: Retro groove colorscheme generalized
@@ -34,16 +77,4 @@
 ! LightGrey + White
 *color7:  #a89984
 *color15: #ebdbb2
-
-URxvt.font: -*-rissole-*, -*-sundae-*
-URxvt.boldFont: -*-pretzel-*
-URxvt.italicFont: -*-rissole-*, -*-sundae-*
-URxvt.boldItalicfont: -*-pretzel-*
-
-
-antialias: 1
-Xft.hinting: 1
-Xft.rgba: rgb
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
 
