@@ -1,0 +1,80 @@
+antialias: 1
+Xft.hinting: 1
+Xft.rgba: rgb
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+! scrollbar setting
+URxvt.scrollBar: false
+URxvt.internalBorder: 15
+
+! Font Settings
+URxvt.font: xft:Hack:regular:size=11
+URxvt.boldFont: xft:Hack:bold:size=11
+URxvt.italicFont: xft:Hack:italic:size=11
+URxvt.boldItalicfont: xft:Hack:bold italic:size=11
+
+! True Transparency 
+URxvt.depth: 32
+URxvt.background: rgba:3f00/3f00/3f00/dddd 
+
+URxvt.perl-ext-common: default,matcher,resize-font,clipboard,resize-font,url-select,keyboard-select
+
+! Resize fonts
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font;bigger
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.keysym.C-question: resize-font:show
+
+! copy paste function
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+URxvt.keysym.Control-V: eval:paste_clipboard
+URxvt.keysym.Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+URxvt.keysym.C-M-c: builtin-string:
+
+!URxvt.perl-ext-common: default
+
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+
