@@ -11,18 +11,10 @@ include assign-workspaces
 # Set mod keys (Mod1=<Alt>, Mod4=<Super/Winkey>)
 set $mod Mod4
 
-# kill container/windows
-bindsym $mod+q kill
-
-# restart i3 inplace
-bindsym Control+Mod1+r restart
 # exit i3
 bindsym Mod1+Escape exec i3-msg exit
 # kill xorg server
 bindsym Mod1+Shift+Escape exec pkill -15 Xorg
-
-# enter fullscreen mode
-bindsym $mod+f fullscreen
 
 # split orientation
 bindsym $mod+c split h

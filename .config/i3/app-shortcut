@@ -2,6 +2,15 @@
 # Author: HalfWayDown
 # https://github.com/HalfWayDown
 
+# kill container/windows
+bindsym $mod+q kill
+
+# Restart i3 inplace
+bindsym Ctrl+Mod1+r restart
+
+# Enter fullscreen
+bindsym $mod+f fullscreen
+
 # terminal
 bindsym $mod+Return exec --no-startup-id alacritty 
 bindsym Ctrl+Mod1+T exec --no-startup-id kitty
@@ -10,8 +19,8 @@ bindsym $mod+Shift+T exec --no-startup-id urxvt
 # rofi
 bindsym $mod+d exec --no-startup-id $HOME/.config/polybar/docky/scripts/launcher.sh
 bindsym $mod+Shift+d exec --no-startup-id dmenu_run -b
-bindsym $mod+Shift+c exec --no-startup-id networkmanager_dmenu
-bindsym Control+Mod1+x exec --no-startup-id $HOME/.config/polybar/docky/scripts/powermenu.sh
+bindsym $mod+z exec --no-startup-id networkmanager_dmenu
+bindsym $mod+x exec --no-startup-id $HOME/.config/polybar/docky/scripts/powermenu.sh
 
 # screenshot to ~/Screenshots folder
 bindsym Print exec --no-startup-id scrot ~/Screenshots/%b%d::%H:%M:%S.png
