@@ -24,7 +24,7 @@ bindsym $mod+x exec --no-startup-id $HOME/.config/polybar/docky/scripts/powermen
 
 # screenshot to ~/Screenshots folder
 bindsym Print exec --no-startup-id scrot ~/Screenshots/%b%d::%H:%M:%S.png
-bindsym Control+Shift+Print exec --no-startup-id scrot -s ~/Screenshots/%b%d::%H:%M:%S.png
+bindsym --release $mod+Print exec --no-startup-id scrot -s -f ~/Screenshots/%b%d::%H:%M:%S.png
 
 # launch browser
 bindsym XF86HomePage exec --no-startup-id firefox
